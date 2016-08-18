@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>.faq-winner {
+        font-weight: bold;
+    }
+    @font-face {
+        font-family: 'socicon';
+        src: url('assets/fonts/socicon-webfont.eot');
+        src: url('assets/fonts/socicon-webfont.eot1') format('embedded-opentype'), url('assets/fonts/socicon-webfont.woff') format('woff'), url('assets/fonts/socicon-webfont.woff2') format('woff2'), url('assets/fonts/socicon-webfont.ttf') format('truetype'), url('assets/fonts/socicon-webfont.svg') format('svg');
+        font-weight: normal;
+        font-style: normal;
+        text-transform: initial;
+    }
+
+    .socicon {
+        font-family: 'socicon' !important;
+    }
+
+    a .socicon {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 24px;
+    }
+
+    a .socicon:hover {
+        color: #FFCC33;
+    }
+
+    .button {
+        background: #000;
+        color: #FFF;
+        display: inline-block;
+        font-weight: 600;
+        padding: 0.7em 1.1em;
+        text-decoration: none
+    }
+
+    .button-prereg {
+        background: #FFCC33;
+        color: #000000;
+        display: block;
+        width: 300px;
+        margin: 0 auto !important;
+    }
+
+    .button-prereg-disabled {
+        background: #999999;
+        cursor: default;
+        color: #fff;
+        display: block;
+        width: 300px;
+        margin: 0 auto !important;
+    }
+
+    .button-prereg-disabled:hover {
+        cursor: default;
+        color: #fff;
+    }
+
+    .button-prereg:hover {
+        background: #999999;
+        color: #ffffff;
+    }
+
+    .button-volunt, .button-sponsor {
+        width: 140px;
+        background: #999999;
+    }
+
+    .button-volunt:hover, .button-sponsor:hover {
+        background: #FFCC33;
+        color: #000000;
+    }
+	.faq {
+		margin-top: 15px;
+		background: #660099;
+		padding: 10px;
+	}
+	
+
+	.faq ul {
+		margin-top: 5px;
+	}
+
+	.faq ul li {
+		list-style: disc inside;
+		color: #fff;
+	}
+
+	.faq ul li a {
+		color: #fff;
+	}
+
+	.faq p {
+		color: #fff;
+	}
+
+	.faq p:first-child:before {
+		content: "Q: ";
+	}
+	.section-text.faq-spaced {
+			padding-left: 20px;
+			padding-right: 20px;
+	}
+	.section-text.compressed {
+			width: 100%;
+	}
+
+	.faq p:last-child:before {
+		content: "A: ";
+	}
+
+	.faq p:first-child {
+		padding: 0;
+		font-weight: bold;
+	}
+
+	.faq p:last-child {
+		padding-top: 5px;
+	}
+
+    .header {
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.75)), url(assets/img/guhposter2.png) no-repeat center center fixed;
+        background-size: cover;
+        box-shadow: inset 0 -1.375em 0 0 rgba(0, 0, 0, 0.4);
+        height: 100%;
+        min-height: 580px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(rgba(109, 0, 157, 0.45), rgba(109, 0, 157, 0.55));
+    }
+
+    video {
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .header .button {
+        margin: 0.4em 0.2em
+    }
+
+    .header-content {
+        padding: 0 0.5em;
+        position: absolute;
+        margin-top: -250px;
+        text-align: center;
+        top: 50%;
+        width: 100%
+    }
+
+    .header-logo {
+        width: 220px;
+        padding-bottom: 100px;
+    }
+
+    .header-title {
+        color: #ebebeb;
+        font-size: 1.7em;
+        margin: 0;
+        text-shadow: .05em .074em 0 rgba(255, 255, 255, 0.12)
+    }
+
+    .header-subtitle {
+        color: #FFCC33;
+        font-size: 1.4em;
+        font-weight: 600;
+        margin: 0 auto 0.7em;
+        text-shadow: .188em .125em 0 rgba(255, 255, 255, 0.05)
+    }
+	.inner {
+		padding: 0;
+		font-weight: 400;
+		margin: 0 auto;
+	}
+	.inner a {
+		color: #fff;
+		text-decoration: underline;
+	}
+    .letsbesocial ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .letsbesocial ul li {
+        display: inline-block;
+    }
+
+    .letsbesocial a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+	.teamster a{
+		color: #373737;
+		text-decoration: none;
+	}
+
+    .visible-lg-block {
+        display: none;
+    }
+
+    .videoatrib a {
+        color: #000;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .videoatrib {
+        display: none;
+    }
+
+    @media only screen and (min-width: 21.25em) {
+        .header-logo {
+            width: 320px
+        }
+    }
+
+    @media only screen and (min-width: 1200px) {
+        .visible-lg-block {
+            display: block;
+        }
+
+        .videoatrib {
+            display: block;
+        }
+    } </style>
+    <meta charset="utf-8">
+    <title>GreatUniHack Fall 2016 | ADD DATE 2016</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="GreatUniHack Fall 2016 is a programming event for students by students, ADD DATE."/>
+    <meta name="author" content="GreatUniHack">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="GreatUniHack 2016 - #hack #connect #learn, ADD DATE 2016."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="http://greatunihack.com"/>
+    <meta property="og:image" content="./assets/img/logo.png"/>
+    <meta property="og:description"
+          content="GreatUniHack Fall 2016 is a programming event for students by students: ADD DATE."/>
+</head>
+<body>
+<header id="header" class="header">
+    <video class="visible-lg-block" src="assets/video/guhloop.mp4" autoplay
+           preload="metadata" loop poster="assets/img/guhposter2.png"></video>
+    <div class="overlay">
+        <div class="header-content">
+            <img src="assets/img/logo.png" class="header-logo" alt="GreatUniHack">
+
+            <h1 class="header-title">#hack #connect #learn</h1>
+
+            <p class="header-subtitle">ADD DATE LATER/2016</p>
+            <a href="http://guh.devpost.com" target="_blank" class="button button-prereg">Demos!</a>
+            <a href="http://2014.greatunihack.com" class="button button-volunt">2014 GUH</a>
+          <a href="http://2016f.greatunihack.com" class="button button-volunt">2015F GUH</a>
+          <a href="http://2016s.greatunihack.com" class="button button-volunt">2016S GUH</a>
+            <div class="letsbesocial">
+                <ul>
+                    <li><a href="http://twitter.com/GreatUniHack"><span class="socicon">a</span></a></li>
+                    <li><a href="http://facebook.com/GreatUniHack"><span class="socicon">b</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="about" class="about">
+
+    <p class="about-event"></p>
+
+    <p class="about-event">in <a class="location-link" href="index.html#location">ADD LOCATION</a>, <strong>Manchester,
+        UK</strong></p>
+
+    <p class="about-event"></p>
+    <p class="about-event">Thanks to our <strong> <a href="#sponsors" class="location-link">Sponsors</a> </strong>, volunteers and mentors we had <strong>Fantastic</strong> weekend</p>
+
+<section id="history" class="history">
+    <h2 class="section-title">History</h2>
+
+    <p class="history-line">In 2014 we organised our very first Hackathon at the University of Manchester.</p>
+
+    <p class="history-line">We've grown up a lot since then and have returned even bigger and better, taking everything
+        we learned from the last event to bring you the best hackathon experience possible.</p>
+
+    <p class="history-line">Why don't you <a
+            href="http://2014.greatunihack.com/">check out</a> how much fun we had in 2014?</p>
+</section>
+<section class="judges" id="judges">
+    <h2 class="section-title">Judges</h2>
+
+    <div class="codirs">
+        <div class="codir">
+            <img src="assets/img/judges/ADD IMG FILE NAME"/>
+
+            <p><a href="ADD WEBSITE">ADD NAME</a></p>
+        </div>
+    </div>
+</section>
+<section id="schedule" class="schedule">
+    <h2 class="section-title">Schedule</h2>
+    ADD SCHEDULE
+</section>
+<section id="sponsors" class="sponsors">
+    <div class="tier tier-partner">
+        <h3 class="tier-title">Venue Sponsor</h3>
+        <a href="ADD VENUE SPONSOR WEBSITE" target="_blank"><img
+                src="assets/img/sponsors/ADD VENUE SPONSOR IMG" alt="ADD IMG DESCRIPTION"
+                style="max-height: 10em"></a>
+    </div>
+    <div class="tier tier-sponsor">
+        <h3 class="tier-title">Sponsors</h3>
+    </div>
+    <div class="tier tier-sponsor tier-gold">
+        
+    </div>
+    <div class="tier tier-sponsor tier-silver">
+        
+    </div>
+    <div class="tier tier-sponsor tier-startup">
+        
+    </div>
+    <div class="tier tier-partner">
+        
+    </div>
+    <div class="tier tier-partner">
+        <h3 class="tier-title">Partners</h3>
+        <a href="http://mlh.io/" target="_blank"><img src="assets/img/sponsors/mlh.png"
+                                                      alt="Major League Hacking" style="max-height: 10em"></a>
+        <br>
+        <a href="http://manchester.ac.uk" target="_blank"><img
+                src="assets/img/sponsors/uom.png" class="sponsor-wide"
+                alt="University of Manchester"></a>
+        <a href="http://www.cssoc.co.uk/" target="_blank"><img
+                src="assets/img/sponsors/cssoc.png" class="sponsor-wide"
+                alt="CSSoc"></a>
+        <a href="https://www.facebook.com/groups/manchester.ultimate.programming/" target="_blank"><img
+                src="assets/img/sponsors/up.png" alt="1-UP"></a>
+        <a href="http://www.manchesterentrepreneurs.org.uk/" target="_blank"><img
+                src="assets/img/sponsors/mentrep.png" class="sponsor-wide"
+                alt="Manchester Entrepreneurs"></a>
+        <a href="http://www.hackaglobal.com/" target="_blank"><img
+                src="assets/img/sponsors/hg.png" class="sponsor-wide"
+                alt="HackaGlobal"></a>
+    </div>
+    <div class="tier tier-partner">
+        <h3 class="tier-title">Event Partners</h3>
+        
+    </div>
+    <div class="tier tier-partner">
+        <h3 class="tier-title">Hardware Lab Partners</h3>
+        
+    </div>
+    <div class="tier tier-partner">
+        <h3 class="tier-title">Media Partners</h3>
+        
+    </div>
+    <p class="sponsor-text">GreatUniHack is still looking for great companies to sponsor our event. If you are
+        interested, click on the button below and</p>
+    <a href="cdn-cgi/l/email-protection#c5b6b5aaabb6aab785a2b7a0a4b1b0abacada4a6aeeba6aaebb0aefab6b0a7afa0a6b1f896b5aaabb6aab7e582908d"
+       class="button button-prereg sponsors-button">Sponsor the GreatUniHack</a>
+</section>
+
+<section id="faq">
+    <div class='inner'>
+
+        <div class='section-title'>
+            <h3>FAQ</h3>
+        </div>
+
+
+        <div class='section-text faq-spaced compressed'>
+            <div class="faq">
+                <p>I haven't coded much. Should I come?</p>
+
+                <p><a href="https://medium.com/@tfogo/hackathons-are-for-beginners-77a9c9c0e000">Hackathons are for
+                    beginners</a>.
+                    Networking with and seeing awesome hackers in action will expose you to a tremendous amount of
+                    knowledge.
+                    Amazing suit of industry experts and mentors that are happy to assist you! </p>
+            </div>
+
+            <div class="faq">
+                <p>What should I bring?</p>
+
+                <p>Bring your laptop, phone and chargers. Other things to consider: spare clothes, adapters,
+                    hardware and a sleeping bag, oh and don't forget your enthusiasm!
+                    We are going to provide you with all food, swag, sleeping rooms and drinks you will need to keep you
+                    going.</p>
+            </div>
+
+            <div class="faq">
+                <p>I don't have a team. Help?</p>
+
+                <p>Don't let that discourage you ― it is actually part of the fun! You will have 3 new friends by the
+                    end of the weekend.
+                    A team building session will be organized to help you form teams. We encourage everyone to use
+                    <a href="http://devpost.com">Devpost</a> to find teammates.</p>
+            </div>
+
+            <br/>
+        </div>
+
+        <div class='section-text faq-spaced compressed'>
+
+            <div class="faq">
+                <p>What can I expect from GreatUniHack?</p>
+
+                <p>An entire weekend of great company, good food and plenty of swag! We'll also have hardware and tons
+                    of mentors.</p>
+            </div>
+
+            <div class="faq">
+                <p>I would like to mentor and give back to the community?</p>
+
+                <p>Awesome! Please fill in this <a href="http://goo.gl/forms/4KDmis6b4W" target="_blank">form</a>
+                    and we will get back to you with more details.</p>
+            </div>
+
+            <div class="faq">
+                <p>Do you have a code of conduct?</p>
+
+                <p>Yes! We strictly adhere to the <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+                                                     target="_blank">Major League Hacking Code
+                    of Conduct</a>.</p>
+            </div>
+
+            <div class="faq">
+                <p>Do you have safeguarding document?</p>
+
+                <p>Yes, we do! Please <a href="mailto:hello@studenthack.com">contact us</a> for more information.</p>
+            </div>
+
+            <div class="faq">
+                <p>Who owns my IP/code/idea?</p>
+
+                <p>You own all the rights to your intellectual property. We won't claim any right over anything made
+                    during this event.</p>
+            </div>
+
+            <br/>
+        </div>
+
+        <div class='section-text faq-spaced right-of-last compressed'>
+
+            <div class="faq">
+                <p>Who are the people behind this event?</p>
+
+                <p>We are HackSoc MCR, run by students from The University of Manchester and Manchester Metropolitan
+                    University
+                    We are extremely passionate about hackathons and tech events and we have run StudentHack and
+                    GreatUniHack successfully for 4 years in Manchester.</p>
+            </div>
+
+            <div class="faq">
+                <p>What's the difference between StudentHack and GreatUniHack?</p>
+
+                <p>StudentHack and GreatUniHack both stemmed from <a href="https://www.mmu.ac.uk">MMU</a> and <a
+                        href="https://www.manchester.ac.uk">Manchester University</a> respectively. We're now working
+                    together to deliver an even more epic hackathon.</p>
+            </div>
+
+            <div class="faq">
+                <p>I now love hackathons. How can I go to more?</p>
+
+                <p>
+                    There's a lot of hackathons! Check out the <a href="https://mlh.io/seasons/s2016-eu/events"
+                                                                  target="_blank">MLH
+                    Europe Spring 2016</a> schedule to see other fantastic hackathons.</p>
+            </div>
+
+            <br/>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="location" class="location">
+    <div class="location-overlay">
+        <h2 class="section-title">Location</h2>
+
+        <p class="contact-line">ADD VENUE NAME</p>
+
+        <p class="contact-line">ADD STREET, Manchester</p>
+
+        <p class="contact-line">ADD POST CODE</p>
+    </div>
+</section>
+<section class="map-holder">
+    <div id="map-canvas"></div>
+</section>
+<section id="team" class="team">
+    <h2 class="section-title">The Team</h2>
+
+    <p class="section-subtitle">Co-Directors</p>
+
+    <div class="codirs">
+        <div class="codir">
+            <img src="assets/img/team/mihai.jpg"/>
+
+            <p><a href="http://twitter.com/mihaibujanca">Mihai Bujanca</a></p>
+        </div>
+    </div>
+    <p class="section-subtitle">Team</p>
+
+    <div class="teamies">
+		
+        <div class="teamster">
+            <img src="assets/img/team/josh.jpg"/>
+
+            <p><a href="http://twitter.com/HeavyHat">Josh Langely</a></p>
+        </div>
+        <div class="teamster">
+            <img src="assets/img/team/sami.jpg"/>
+
+            <p><a href="http://twitter.com/smi_abd">Sami Alabed</a></p>
+        </div>
+        <div class="teamster">
+            <img src="assets/img/team/dainis.jpg"/>
+
+            <p>Dainis Gorbunovs</p>
+        </div>
+        <div class="teamster">
+            <img src="assets/img/team/cornelia.jpg"/>
+
+            <p>Cornelia Secelean</p>
+        </div>
+    </div>
+</section>
+<section id="contact" class="contact">
+    <h2 class="section-title">Contact</h2>
+
+    <p class="contact-line">Please check our new website for the new contact details <a href="http://greatunihack.com">GreatUniHack</a> </p>
+</section>
+<footer id="footer" class="footer section-container">
+    <p>Copyright &copy; 2014-2016 GreatUniHack. Website by <a class="dev" href="http://misozmiric.com">Miso Zmiric</a>.
+        <span class="videoatrib">Timelapse video provided by <a href="http://agour.co.uk/">Paul Richardson</a> (Video was modified)</span>
+    </p>
+</footer>
+<link rel="stylesheet" type="text/css" href="assets/css/style.min.css"/>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src = "assets/js/jquery-2.1.3.min.js" ></script>
+<script src="assets/js/guh.js"></script>
+</body>
+</html>
