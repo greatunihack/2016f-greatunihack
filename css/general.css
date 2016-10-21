@@ -13,6 +13,7 @@ body, html {
 	height: 100%;
 	width: 100%;
 	overflow-x:hidden;
+	position: relative;
 }
 
 ::-moz-selection{background:#1abc9c;color:white}
@@ -201,16 +202,18 @@ background: #1abc9c !important;
 
 /* Nav */
 .navbar {
-	position: relative;
+	
+	background: transparent !important;
 	min-height: 60px;
 	margin-bottom: 0; 
 	width: 100%;
-	z-index: 999;
+	
 	border-radius: 0; 
 }
-
+ 
 .navbar-default {
-	position: relative;
+	
+    background: transparent !important;
 	min-height: 60px;
 	width: 100%;
 	z-index: 999;
@@ -218,18 +221,18 @@ background: #1abc9c !important;
 }
 
 .navbar-default .navbar-nav>li>a {
-color: #ffffff;
+	color: #ffffff;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-color: #ECEBEB;
+	color: #fff;
 }
 
 .navbar-default .navbar-brand {
-color: #ffffff;
+	color: #ffffff;
 }
 .navbar-default .navbar-brand:hover {
-color: #ECEBEB;
+	color: #fff;
 }
 
 .navbar-brand {
@@ -339,6 +342,17 @@ color: #ECEBEB;
 	background: url(../img/guhposter2.png) no-repeat center center;
 	background-size: cover;
 }
+
+    .question {
+      color: #009fdb;
+      display: block;
+      font-size: 20px;
+      margin: 15px 0 5px;
+      width: 100%;
+}
+   /* .answer {
+      display: none;
+} */
 
 /* Animate */
 .rotate{
@@ -1102,7 +1116,7 @@ color: #ECEBEB;
 		}
 		#gallery1{display:none}
 		
-		.button_down {display:none}
+		
 		
 		
 	}
