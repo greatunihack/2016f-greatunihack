@@ -20,9 +20,9 @@ body, html {
 
 ::selection{background:#1abc9c;color:white}
 
-.abcen{position: absolute;bottom: 8%;}
+.abcen{position: relative;bottom: 8%;}
 
-.abcen1{position: absolute;top: 20%;}
+.abcen1{position: absolute;top: 19%;}
 
 .content-section-c {
 	border-top: 1px solid #32465A;
